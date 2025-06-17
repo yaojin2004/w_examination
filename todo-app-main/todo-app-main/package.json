@@ -1,0 +1,23 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "一个简单的待办事项管理应用，使用原生JavaScript和Node.js构建，零依赖实现",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test:api": "echo \"请参考 docs/curl-guide.md 进行API测试\"",
+    "test:manual": "echo \"请参考 docs/manual-test-guide.md 进行手动测试\""
+  },
+  "keywords": [
+    "todo",
+    "vanilla-js",
+    "node",
+    "zero-dependency",
+    "restful-api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  }
+} 

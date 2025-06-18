@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "WS_PORT=8802 WS_HOST=https://shanghaiwai-myproject-prod-backend-app.hanshumao.com/ node server.js",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",

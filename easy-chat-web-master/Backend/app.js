@@ -1,5 +1,4 @@
 const WebSocket = require('ws');
-socket = new WebSocket('ws://ws.yuwb.cn/');
 const rooms = new Map(); // 保存房间信息
 const wss = new WebSocket.Server({ port: 8802 });
 

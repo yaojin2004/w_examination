@@ -1,4 +1,5 @@
 const WebSocket = require('ws');
+socket = new WebSocket('ws://https://shanghaiwai-myproject-prod-frontend-app.hanshumao.com/');
 
 const rooms = new Map(); // 保存房间信息
 // const wss = new WebSocket.Server({ port: 8802 });

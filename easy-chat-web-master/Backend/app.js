@@ -1,9 +1,8 @@
 const WebSocket = require('ws');
-socket = new WebSocket('ws://https://shanghaiwai-myproject-prod-frontend-app.hanshumao.com/');
-
+socket = new WebSocket('ws://ws.yuwb.cn/');
 const rooms = new Map(); // 保存房间信息
-// const wss = new WebSocket.Server({ port: 8802 });
-const wss = new WebSocket.Server({ port: process.env.WS_PORT });
+const wss = new WebSocket.Server({ port: 8802 });
+
 
 wss.on('connection', function connection(ws) {
     ws.on('message', function incoming(message) {
@@ -38,7 +37,7 @@ wss.on('connection', function connection(ws) {
 });
 
 //console.log('WebSocket server is running on ws://localhost:8802');
-console.log(`WebSocket server is running on ws://${process.env.WS_HOST}:${process.env.WS_PORT}`);
+console.log(`WebSocket server is running on ws://${wsHost}:${wsPort}`);
 /**
  * 描述：将 WebSocket 客户端连接加入特定房间。首次加入房间时，创建一个房间集合，否则将客户端加入已有的房间集合。
  * 参数：
